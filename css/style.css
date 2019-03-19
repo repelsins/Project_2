@@ -1,0 +1,13 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+	background: #fafafa;
+}
