@@ -10,4 +10,59 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.6;
 	background: #fafafa;
+	color: #4a4a4a;
+}
+
+.main-nav {
+	margin-bottom: 20px;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #4a4a4a;
+}
+
+.main-nav li {
+	background: white;
+	margin-bottom: 5px;
+}
+
+.main-nav a {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+	.container {
+		width: 100%;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
 }
