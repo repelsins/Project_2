@@ -16,6 +16,8 @@ body {
 h2 {
   font-size: 1.2em;
   text-transform: uppercase;
+  margin: 1em 0;
+  padding-top: 1em;
 }
 
 /* ================================= 
@@ -47,10 +49,13 @@ h2 {
   font-weight: bold;
 }
 
+.main-nav a:hover {
+  color: #717171;
+}
+
 /* ---- Layout Containers ---- */
 
-.wrapper,
-.container {
+.wrapper {
   width: 90%;
   margin: 0 auto;
 }
@@ -63,9 +68,6 @@ h2 {
 .portfolio {
   text-align: center;
   background: #fff;
-}
-
-.col {
 }
 
 /* ---- Page Elements ---- */
@@ -83,8 +85,7 @@ h2 {
 ==================================== */
 
 @media (min-width: 769px) {
-  .wrapper,
-  .container {
+  .wrapper {
     max-width: 1150px;
   }
 
@@ -112,8 +113,13 @@ h2 {
     float: right;
   }
 
+  .col {
+    width: 45%;
+    display: inline-block;
+  }
+
   .content-image {
-    width: 30%;
+    width: 95%;
   }
 }
 
