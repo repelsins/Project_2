@@ -3,74 +3,124 @@
 ==================================== */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	line-height: 1.6;
-	background: #fafafa;
-	color: #4a4a4a;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #4a4a4a;
 }
 
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
 .main-nav {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .name a,
 .main-nav a {
-	display: block;
-	text-align: center;
-	padding: 10px 15px;
-	text-decoration: none;
-	color: #4a4a4a;
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #4a4a4a;
 }
 
 .main-nav li {
-	background: white;
-	margin-bottom: 5px;
+  background: white;
+  margin-bottom: 5px;
 }
 
 .main-nav a {
-	text-transform: uppercase;
-	font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
+/* ---- Layout Containers ---- */
+
+.wrapper,
 .container {
-	width: 90%;
-	margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
+
+.banner {
+  display: block;
+  text-align: center;
+}
+
+.portfolio {
+  text-align: center;
+  background: #fff;
+}
+
+.col {
+}
+
+/* ---- Page Elements ---- */
+
+.avatar {
+  width: 70%;
+}
+
+.content-image {
+  width: 90%;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
 
 @media (min-width: 769px) {
-	.container {
-		width: 100%;
-		max-width: 1150px;
-	}
+  .wrapper,
+  .container {
+    max-width: 1150px;
+  }
 
-	.name {
-		float: left;
-	}
+  .name {
+    float: left;
+  }
 
-	.main-nav {
-		float: right;
-		margin-bottom: 0;
-		margin-top: 30px;
-	}
+  .main-nav {
+    float: right;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
 
-	.main-nav li {
-		display: inline-block;
-		background: #fafafa;
-	}
+  .main-nav li {
+    display: inline-block;
+    background: #fafafa;
+  }
 
-	.content-image {
-		width: 30%;
-	}
+  .banner {
+    text-align: unset;
+  }
+
+  .avatar {
+    width: 40%;
+    float: right;
+  }
+
+  .content-image {
+    width: 30%;
+  }
 }
 
 /* ---- Float clearfix ---- */
 
 .clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
+  content: " ";
+  display: table;
+  clear: both;
 }
