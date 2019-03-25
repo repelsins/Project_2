@@ -3,21 +3,21 @@
 ==================================== */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6;
-  background: #fafafa;
-  color: #4a4a4a;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
+	background: #fafafa;
+	color: #4a4a4a;
 }
 
 h2 {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  margin: 1em 0;
-  padding-top: 1em;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin: 1em 0;
+	padding-top: 1em;
 }
 
 /* ================================= 
@@ -27,114 +27,114 @@ h2 {
 /* ---- Navigation ---- */
 
 .main-nav {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .name a,
 .main-nav a {
-  display: block;
-  text-align: center;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #4a4a4a;
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #4a4a4a;
 }
 
 .main-nav li {
-  background: white;
-  margin-bottom: 5px;
+	background: white;
+	margin-bottom: 5px;
 }
 
 .main-nav a {
-  text-transform: uppercase;
-  font-weight: bold;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .main-nav a:hover {
-  color: #717171;
+	color: #717171;
 }
 
 /* ---- Layout Containers ---- */
 
 .wrapper {
-  width: 90%;
-  margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .container {
-  margin-bottom: 2em;
+	margin-bottom: 2em;
 }
 
 .banner {
-  display: block;
-  text-align: center;
+	display: block;
+	text-align: center;
 }
 
 .portfolio,
 .contact {
-  text-align: center;
+	text-align: center;
 }
 
 .portfolio {
-  background: #fff;
+	background: #fff;
 }
 
 .contact {
-  border-bottom: 2px solid #e7e7e7;
-  padding-bottom: 25px;
+	border-bottom: 2px solid #e7e7e7;
+	padding-bottom: 25px;
 }
 
 .footer-nav {
-  display: none;
+	display: none;
 }
 
 .footer-nav,
 .footer-nav2 {
-  float: right;
+	float: right;
 }
 
 .footer-nav a,
 .footer-nav2 a {
-  display: block;
-  text-align: center;
-  padding: 10px 15px;
-  margin-top: -15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #4a4a4a;
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+	margin-top: -15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #4a4a4a;
 }
 
 .footer-nav a:hover,
 .footer-nav2 a:hover {
-  color: #717171;
+	color: #717171;
 }
 
 .main-footer {
-  margin: 1.5em 0;
+	margin: 1.5em 0;
 }
 
 /* ---- Page Elements ---- */
 
 .avatar {
-  width: 70%;
+	width: 70%;
 }
 
 .content-image {
-  width: 90%;
+	width: 90%;
 }
 
 .footer-title {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .banner p,
 .col p {
-  padding: 0 2em;
+	padding: 0 2em;
 }
 
 .contact p {
-  width: 60%;
-  margin: 0 auto 1em;
+	width: 60%;
+	margin: 0 auto 1em;
 }
 
 /* ================================= 
@@ -142,86 +142,90 @@ h2 {
 ==================================== */
 
 @media (min-width: 768px) {
-  .wrapper {
-    max-width: 1150px;
-  }
+	/* ---- Layout Containers ---- */
 
-  .main-nav {
-    text-align: center;
-    margin-bottom: 1em;
-  }
+	.wrapper {
+		max-width: 1150px;
+	}
 
-  .main-nav li {
-    display: inline-block;
-    background: #fafafa;
-  }
+	.banner {
+		text-align: unset;
+	}
 
-  .banner {
-    text-align: unset;
-  }
+	.main-nav {
+		text-align: center;
+		margin-bottom: 1em;
+	}
 
-  .avatar {
-    width: 40%;
-    float: right;
-  }
+	.main-nav li {
+		display: inline-block;
+		background: #fafafa;
+	}
 
-  .col {
-    width: 45%;
-    display: inline-block;
-  }
+	.avatar {
+		width: 40%;
+		float: right;
+	}
 
-  .content-image {
-    width: 95%;
-  }
+	.col {
+		width: 45%;
+		display: inline-block;
+	}
 
-  .footer-nav {
-    display: block;
-  }
+	.content-image {
+		width: 95%;
+	}
 
-  .footer-nav li {
-    display: inline-block;
-  }
+	.footer-nav {
+		display: block;
+	}
 
-  .footer-nav2 {
-    display: none;
-  }
+	.footer-nav li {
+		display: inline-block;
+	}
 
-  .banner p {
-    padding: 0 2em 0 1em;
-    width: 60%;
-  }
+	.footer-nav2 {
+		display: none;
+	}
 
-  h1 {
-    margin-bottom: 0;
-  }
+	/* ---- Page Elements ---- */
+
+	.banner p {
+		padding: 0 2em 0 1em;
+		width: 60%;
+	}
+
+	h1 {
+		margin-bottom: 0;
+	}
 }
 
 @media (min-width: 1024px) {
-  .name {
-    float: left;
-  }
+	.name {
+		float: left;
+	}
 
-  .main-nav {
-    float: right;
-    margin-bottom: 0;
-    margin-top: 30px;
-  }
+	.main-nav {
+		float: right;
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
 
-  .main-nav li {
-    display: inline-block;
-    background: #fafafa;
-  }
+	.main-nav li {
+		display: inline-block;
+		background: #fafafa;
+	}
 
-  .col {
-    width: 30%;
-    display: inline-block;
-  }
+	.col {
+		width: 30%;
+		display: inline-block;
+	}
 }
 
 /* ---- Float clearfix ---- */
 
 .clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
+	content: " ";
+	display: table;
+	clear: both;
 }
