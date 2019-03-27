@@ -149,7 +149,7 @@ a:active {
   Media Queries
 ==================================== */
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   h1 {
     margin-bottom: 0;
   }
@@ -204,7 +204,7 @@ a:active {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .name {
     float: left;
   }
