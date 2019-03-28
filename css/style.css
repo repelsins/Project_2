@@ -125,7 +125,8 @@ a:active {
 }
 
 .portfolio,
-.contact {
+.contact,
+.skills {
 	text-align: center;
 }
 
@@ -136,6 +137,16 @@ a:active {
 .contact {
 	border-bottom: 2px solid #e7e7e7;
 	padding-bottom: 25px;
+}
+
+.flex-skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.flex-skills > col {
+	width: 100%;
 }
 
 .main-footer {
@@ -175,6 +186,10 @@ a:active {
 	padding-left: 0.5em;
 }
 
+.icon {
+	width: 50px;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -212,6 +227,20 @@ a:active {
 	.col {
 		width: 45%;
 		display: inline-block;
+	}
+
+	.flex-skills {
+		flex-direction: row;
+	}
+
+	.flex-skills > .item {
+		border-right: 1px #e6ecf8 solid;
+		flex: 1;
+		padding: 0 15px;
+	}
+
+	.flex-skills > .item:last-child {
+		border-right: 0;
 	}
 
 	.content-image {
@@ -266,6 +295,14 @@ a:active {
 	.col {
 		width: 30%;
 		display: inline-block;
+	}
+
+	.skills > h2 {
+		padding-bottom: 10px;
+	}
+
+	.skills > .col > p {
+		padding: 0 10px;
 	}
 }
 
