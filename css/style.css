@@ -270,7 +270,7 @@ a:active {
     width: 95%;
   }
 
-  .footer-nav > .mobile-nav {
+  .footer-nav .mobile-nav {
     display: none;
   }
 
